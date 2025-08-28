@@ -1,4 +1,4 @@
-8<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,12 @@
     <style>
         /* CSS Reset & Basic Setup */
         :root {
-            --color-background: #0a0a0a;
-            --color-surface: #1a1a1a;
-            --color-text: #e0e0e0;
-            --color-primary: #e53935; /* Fiery Red */
-            --color-primary-hover: #ff6e40; /* Molten Orange */
+            --color-background: #0a0a0a; /* Deep Black */
+            --color-surface: #1a1a1a;    /* Dark Charcoal */
+            --color-text: #e0e0e0;      /* Off-white for readability */
+            --color-logo-orange: #f26622; /* Fiery orange from your logo */
+            --color-logo-green: #3a7d44;  /* Dark green from your logo */
+            --color-logo-grey: #404040;   /* Dark grey from your logo */
             --font-heading: 'Oswald', sans-serif;
             --font-body: 'Roboto', sans-serif;
         }
@@ -37,7 +38,8 @@
             color: var(--color-text);
             font-family: var(--font-body);
             line-height: 1.6;
-            background-image: radial-gradient(circle at 50% 0, rgba(229, 57, 53, 0.1), transparent 30%);
+            /* Subtler background effect to not clash with logo */
+            background-image: radial-gradient(circle at 50% 0, rgba(242, 102, 34, 0.1), transparent 30%); /* Using logo orange */
         }
 
         .container {
@@ -51,7 +53,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            color: white;
+            color: white; /* Headings remain white for strong contrast */
         }
 
         p {
@@ -60,42 +62,42 @@
 
         a {
             text-decoration: none;
-            color: var(--color-primary);
+            color: var(--color-logo-orange); /* Affiliate links use logo orange */
         }
 
         /* Header / Hero Section */
         .hero {
-            min-height: 90vh;
+            min-height: 100vh; /* Make hero section full viewport height */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 4rem 1rem;
-            background: url("../static/infernalbitsdotcom.png") no-repeat center center/cover;
-            background-attachment: fixed; /* Parallax effect */
             position: relative;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to top, var(--color-background) 5%, rgba(10, 10, 10, 0.7) 50%, var(--color-background) 95%);
+            background: radial-gradient(circle at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.95) 50%, rgba(0,0,0,1) 100%);
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero .logo-img {
+            max-width: 80%; /* Adjust as needed */
+            height: auto;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 0 10px rgba(242, 102, 34, 0.5)); /* Glow effect matching orange */
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-size: 3rem; /* Slightly smaller to accommodate logo */
             margin-bottom: 0.5rem;
-            text-shadow: 0 0 15px rgba(229, 57, 53, 0.7);
+            text-shadow: 0 0 10px rgba(242, 102, 34, 0.5); /* Glow matches logo orange */
+            display: none; /* Hide the text H1 since we have the logo */
         }
 
         .hero .subtitle {
@@ -104,6 +106,7 @@
             font-weight: 500;
             margin-bottom: 2rem;
             color: var(--color-text);
+            max-width: 700px;
         }
 
         /* Buttons */
@@ -114,18 +117,18 @@
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            background-color: var(--color-primary);
+            background-color: var(--color-logo-orange); /* Buttons use logo orange */
             color: #fff;
-            border: 2px solid var(--color-primary);
+            border: 2px solid var(--color-logo-orange);
             border-radius: 4px;
             transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background-color: var(--color-primary-hover);
-            border-color: var(--color-primary-hover);
+            background-color: var(--color-logo-green); /* Hover uses logo green */
+            border-color: var(--color-logo-green);
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(229, 57, 53, 0.4);
+            box-shadow: 0 5px 20px rgba(242, 102, 34, 0.4); /* Shadow matches orange */
         }
 
         /* Section Styling */
@@ -155,7 +158,7 @@
 
         .product-card {
             background-color: var(--color-surface);
-            border: 1px solid #282828;
+            border: 1px solid var(--color-logo-grey); /* Border uses logo grey */
             border-radius: 8px;
             overflow: hidden;
             text-align: center;
@@ -164,7 +167,7 @@
         
         .product-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(229, 57, 53, 0.2);
+            box-shadow: 0 10px 30px rgba(242, 102, 34, 0.2); /* Shadow matches orange */
         }
 
         .product-card img {
@@ -181,7 +184,7 @@
         .product-card h3 {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
-            color: var(--color-primary);
+            color: var(--color-logo-orange); /* Product titles use logo orange */
         }
 
         .product-card p {
@@ -192,8 +195,8 @@
         /* Manifesto Section */
         #manifesto {
             background-color: var(--color-surface);
-            border-top: 2px solid var(--color-primary);
-            border-bottom: 2px solid var(--color-primary);
+            border-top: 2px solid var(--color-logo-green); /* Border uses logo green */
+            border-bottom: 2px solid var(--color-logo-green);
         }
 
         .manifesto-text {
@@ -220,8 +223,11 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .hero .logo-img {
+                max-width: 90%;
+            }
             .hero h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
             .hero .subtitle {
                 font-size: 1.2rem;
@@ -239,8 +245,8 @@
 
     <header class="hero">
         <div class="hero-content">
-            <h1>ASCEND TO INFERNAL POWER</h1>
-            <p class="subtitle">Unleash Hellish Performance with PC Gear Forged in Fire</p>
+            <img src="http://googleusercontent.com/file_content/0" alt="InfernalBits Logo" class="logo-img">
+            <h1>InfernalBits</h1> <p class="subtitle">Unleash Hellish Performance with PC Gear Forged in Fire</p>
             <a href="#armoury" class="btn">Explore the Armoury</a>
         </div>
     </header>
@@ -263,7 +269,7 @@
 
                 <div class="product-grid">
                     <div class="product-card">
-                        <img src="https://placehold.co/400x250/1a1a1a/e53935?text=GPU+Image" alt="Gaming Graphics Card">
+                        <img src="https://placehold.co/400x250/1a1a1a/f26622?text=GPU+Image" alt="Gaming Graphics Card">
                         <div class="product-card-content">
                             <h3>Eyes of the Overlord</h3>
                             <p>Render your enemies' worlds in blistering detail. These GPUs deliver divine framerates and the power to see all.</p>
@@ -272,7 +278,7 @@
                     </div>
 
                     <div class="product-card">
-                        <img src="https://placehold.co/400x250/1a1a1a/e53935?text=Mouse+Keyboard+Image" alt="Gaming Mouse and Keyboard">
+                        <img src="https://placehold.co/400x250/1a1a1a/f26622?text=Mouse+Keyboard+Image" alt="Gaming Mouse and Keyboard">
                         <div class="product-card-content">
                             <h3>Claws of the Beast</h3>
                             <p>Achieve god-like precision and speed. With these peripherals, every click is a killing blow, every movement a masterstroke.</p>
@@ -281,7 +287,7 @@
                     </div>
 
                     <div class="product-card">
-                        <img src="https://placehold.co/400x250/1a1a1a/e53935?text=CPU+Image" alt="Gaming Processor CPU">
+                        <img src="https://placehold.co/400x250/1a1a1a/f26622?text=CPU+Image" alt="Gaming Processor CPU">
                         <div class="product-card-content">
                             <h3>The Molten Core</h3>
                             <p>The heart of your infernal machine. These CPUs process reality at impossible speeds, ensuring you're always a step ahead.</p>
