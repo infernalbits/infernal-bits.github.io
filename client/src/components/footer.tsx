@@ -33,32 +33,27 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <div className="font-mono text-gaming-neon/60 text-xs leading-none mb-2">
-                ╔════════════════════════════════════════╗
-                ║  ██╗███╗   ██╗███████╗███████╗██████╗  ║
-                ║  ██║████╗  ██║██╔════╝██╔════╝██╔══██╗ ║
-                ║  ██║██╔██╗ ██║█████╗  █████╗  ██████╔╝ ║
-                ║  ██║██║╚██╗██║██╔══╝  ██╔══╝  ██╔══██╗ ║
-                ║  ██║██║ ╚████║██║     ███████╗██║  ██║ ║
-                ║  ╚═╝╚═╝  ╚═══╝╚═╝     ╚══════╝╚═╝  ╚═╝ ║
-                ╚════════════════════════════════════════╝
+              <div className="font-mono text-hellfire-red/60 text-xs leading-none mb-2">
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+                ██ ⛧ SUMMONED FROM THE DEPTHS OF SILICON HELL ⛧ ██
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
               </div>
               <span className="text-xl font-bold text-gradient">InfernalBits</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Your trusted source for gaming hardware reviews, comparisons, and the best deals on PC gaming components.
+              Your gateway to the digital underworld. Where hardware souls are weighed and the weak are cast into obsolescence.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-gaming-neon" data-testid="social-twitter">
+              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-hellfire-red" data-testid="social-twitter">
                 <Twitter className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-gaming-neon" data-testid="social-youtube">
+              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-hellfire-red" data-testid="social-youtube">
                 <Youtube className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-gaming-neon" data-testid="social-discord">
+              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-hellfire-red" data-testid="social-discord">
                 <MessageCircle className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-gaming-neon" data-testid="social-reddit">
+              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-hellfire-red" data-testid="social-reddit">
                 <Vote className="h-5 w-5" />
               </Button>
             </div>
@@ -71,7 +66,7 @@ export default function Footer() {
               {categories.map((category) => (
                 <li key={category.name}>
                   <Link href={category.href}>
-                    <span className="text-muted-foreground hover:text-gaming-neon transition-colors" data-testid={`footer-category-${category.name.toLowerCase().replace(' ', '-')}`}>
+                    <span className="text-muted-foreground hover:text-hellfire-red transition-colors" data-testid={`footer-category-${category.name.toLowerCase().replace(' ', '-')}`}>
                       {category.name}
                     </span>
                   </Link>
@@ -87,7 +82,7 @@ export default function Footer() {
               {resources.map((resource) => (
                 <li key={resource.name}>
                   <Link href={resource.href}>
-                    <span className="text-muted-foreground hover:text-gaming-neon transition-colors" data-testid={`footer-resource-${resource.name.toLowerCase().replace(' ', '-')}`}>
+                    <span className="text-muted-foreground hover:text-hellfire-red transition-colors" data-testid={`footer-resource-${resource.name.toLowerCase().replace(' ', '-')}`}>
                       {resource.name}
                     </span>
                   </Link>
@@ -103,7 +98,7 @@ export default function Footer() {
               {legal.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href}>
-                    <span className="text-muted-foreground hover:text-gaming-neon transition-colors" data-testid={`footer-legal-${item.name.toLowerCase().replace(' ', '-')}`}>
+                    <span className="text-muted-foreground hover:text-hellfire-red transition-colors" data-testid={`footer-legal-${item.name.toLowerCase().replace(' ', '-')}`}>
                       {item.name}
                     </span>
                   </Link>
@@ -117,7 +112,7 @@ export default function Footer() {
         <div className="border-t border-border pt-8">
           <div className="bg-muted rounded-lg p-4 mb-6">
             <div className="flex items-start space-x-3">
-              <Info className="text-gaming-neon mt-1 h-5 w-5" />
+              <Info className="text-hellfire-red mt-1 h-5 w-5" />
               <div>
                 <h4 className="font-medium text-sm mb-1">Affiliate Disclosure</h4>
                 <p className="text-xs text-muted-foreground">
@@ -131,9 +126,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center pt-4">
             <p className="text-sm text-muted-foreground">© 2024 InfernalBits.com. All rights reserved.</p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0 text-sm text-muted-foreground">
-              <span>Built for gamers, by gamers</span>
+              <span>Forged in the fires of digital hell</span>
               <span>•</span>
-              <span>Powered by React & Express</span>
+              <span>Powered by cursed code & dark magic</span>
             </div>
           </div>
         </div>

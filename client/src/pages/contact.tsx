@@ -44,19 +44,14 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <div className="font-mono text-gaming-blue/40 text-xs leading-none mb-6">
-            ╔═══════════════════════════════════════════════════════════════════╗
-            ║   ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗  ║
-            ║  ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝  ║
-            ║  ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║        ██║     ║
-            ║  ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║        ██║     ║
-            ║  ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║     ║
-            ║   ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝     ║
-            ╚═══════════════════════════════════════════════════════════════════╝
+          <div className="font-mono text-demon-purple/60 text-xs leading-none mb-6">
+            ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+            ░█▒ ✮ WHISPER YOUR SECRETS INTO THE DIGITAL VOID ✮ ▒█░
+            ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
           </div>
-          <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+          <h1 className="text-4xl font-bold mb-4 infernal-text-glow">Commune with the Abyss</h1>
           <p className="text-lg text-muted-foreground">
-            Have questions about our reviews or suggestions for products to test? We'd love to hear from you.
+            Speak your questions into the void. The digital demons await your mortal whispers and hardware confessions.
           </p>
         </div>
 
@@ -65,8 +60,8 @@ export default function ContactPage() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <MessageSquare className="h-5 w-5 text-gaming-neon" />
-                Send us a message
+                <MessageSquare className="h-5 w-5 text-hellfire-red" />
+                Whisper to the void
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -124,11 +119,11 @@ export default function ContactPage() {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-gaming-neon hover:bg-gaming-neon/90 text-background"
+                  className="w-full bg-hellfire-red hover:bg-hellfire-red/90 text-background hellfire-glow"
                   disabled={isSubmitting}
                   data-testid="button-send-message"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Channeling..." : "Channel Message"}
                 </Button>
               </form>
             </CardContent>
@@ -139,42 +134,42 @@ export default function ContactPage() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gaming-neon/10 rounded-lg flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-gaming-neon" />
+                  <div className="w-12 h-12 bg-hellfire-red/10 rounded-lg flex items-center justify-center">
+                    <Mail className="h-6 w-6 text-hellfire-red" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Email Us</h3>
+                    <h3 className="font-semibold">Summon Us</h3>
                     <p className="text-sm text-muted-foreground">
-                      Get in touch via email
+                      Reach us through the digital void
                     </p>
                   </div>
                 </div>
-                <p className="text-gaming-neon font-medium">contact@infernalbits.com</p>
+                <p className="text-hellfire-red font-medium">contact@infernalbits.com</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gaming-blue/10 rounded-lg flex items-center justify-center">
-                    <Clock className="h-6 w-6 text-gaming-blue" />
+                  <div className="w-12 h-12 bg-infernal-orange/10 rounded-lg flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-infernal-orange" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Response Time</h3>
+                    <h3 className="font-semibold">Manifestation Time</h3>
                     <p className="text-sm text-muted-foreground">
-                      We typically respond within
+                      The spirits typically respond within
                     </p>
                   </div>
                 </div>
-                <p className="text-gaming-blue font-medium">24 hours</p>
+                <p className="text-infernal-orange font-medium">24 hours</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gaming-red/10 rounded-lg flex items-center justify-center">
-                    <Shield className="h-6 w-6 text-gaming-red" />
+                  <div className="w-12 h-12 bg-demon-purple/10 rounded-lg flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-demon-purple" />
                   </div>
                   <div>
                     <h3 className="font-semibold">Privacy</h3>

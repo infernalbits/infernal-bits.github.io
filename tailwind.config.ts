@@ -61,9 +61,9 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        "gaming-neon": "var(--gaming-neon)",
-        "gaming-blue": "var(--gaming-blue)",
-        "gaming-red": "var(--gaming-red)",
+        "hellfire-red": "var(--hellfire-red)",
+        "infernal-orange": "var(--infernal-orange)",
+        "demon-purple": "var(--demon-purple)",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

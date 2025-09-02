@@ -53,9 +53,9 @@ export default function NewsPage() {
         {/* Article Header */}
         <div className="max-w-4xl mx-auto">
           <nav className="mb-8 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-gaming-neon">Home</Link>
+            <Link href="/" className="hover:text-hellfire-red">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/news" className="hover:text-gaming-neon">News</Link>
+            <Link href="/news" className="hover:text-hellfire-red">News</Link>
             <span className="mx-2">/</span>
             <span className="text-foreground">{article.title}</span>
           </nav>
@@ -63,9 +63,9 @@ export default function NewsPage() {
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <Badge className={`${
-                article.category === 'REVIEW' ? 'bg-gaming-neon text-background' :
-                article.category === 'GUIDE' ? 'bg-gaming-blue text-background' :
-                'bg-gaming-red text-background'
+                article.category === 'REVIEW' ? 'bg-hellfire-red text-background' :
+                article.category === 'GUIDE' ? 'bg-infernal-orange text-background' :
+                'bg-demon-purple text-background'
               }`}>
                 {article.category}
               </Badge>
@@ -136,15 +136,15 @@ export default function NewsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold mb-4">Gaming News & Reviews</h1>
+        <h1 className="text-4xl font-bold mb-4 infernal-text-glow">Unholy Chronicles & Dark Reviews</h1>
         <p className="text-lg text-muted-foreground">
-          Stay updated with the latest gaming hardware news, reviews, and build guides
+          Forbidden knowledge, cursed hardware reviews, and digital damnation guides
         </p>
       </div>
 
       {/* Filter Tabs */}
       <div className="flex gap-2 mb-8">
-        <Button variant="default" className="bg-gaming-neon text-background" data-testid="filter-all">
+        <Button variant="default" className="bg-hellfire-red text-background" data-testid="filter-all">
           All Articles
         </Button>
         <Button variant="outline" data-testid="filter-reviews">Reviews</Button>
@@ -186,9 +186,9 @@ export default function NewsPage() {
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-2 mb-3">
                     <Badge className={`${
-                      article.category === 'REVIEW' ? 'bg-gaming-neon text-background' :
-                      article.category === 'GUIDE' ? 'bg-gaming-blue text-background' :
-                      'bg-gaming-red text-background'
+                      article.category === 'REVIEW' ? 'bg-hellfire-red text-background' :
+                      article.category === 'GUIDE' ? 'bg-infernal-orange text-background' :
+                      'bg-demon-purple text-background'
                     } text-xs font-bold`}>
                       {article.category}
                     </Badge>
@@ -198,10 +198,10 @@ export default function NewsPage() {
                   <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{article.excerpt}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <div className="w-6 h-6 bg-gaming-neon rounded-full"></div>
+                      <div className="w-6 h-6 bg-hellfire-red rounded-full"></div>
                       <span className="text-sm text-muted-foreground">{article.author}</span>
                     </div>
-                    <span className="text-gaming-neon text-sm font-medium">Read More</span>
+                    <span className="text-hellfire-red text-sm font-medium">Delve Deeper</span>
                   </div>
                 </CardContent>
               </Card>

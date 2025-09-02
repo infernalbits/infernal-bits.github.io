@@ -17,17 +17,17 @@ export default function ProductCard({ product, showDiscount = false }: ProductCa
   const getColorByCategory = (category: string) => {
     switch (category) {
       case 'graphics-cards':
-        return 'gaming-neon';
+        return 'hellfire-red';
       case 'processors':
-        return 'gaming-blue';
+        return 'infernal-orange';
       case 'peripherals':
-        return 'gaming-red';
+        return 'demon-purple';
       case 'monitors':
-        return 'gaming-blue';
+        return 'infernal-orange';
       case 'storage':
-        return 'gaming-red';
+        return 'demon-purple';
       default:
-        return 'gaming-neon';
+        return 'hellfire-red';
     }
   };
 
@@ -45,7 +45,7 @@ export default function ProductCard({ product, showDiscount = false }: ProductCa
           />
         </Link>
         {showDiscount && product.originalPrice && (
-          <Badge className="absolute top-2 left-2 bg-gaming-red text-background">
+          <Badge className="absolute top-2 left-2 bg-hellfire-red text-background">
             {discountPercentage}% OFF
           </Badge>
         )}
@@ -55,14 +55,14 @@ export default function ProductCard({ product, showDiscount = false }: ProductCa
           className="absolute top-2 right-2 bg-background/80 backdrop-blur rounded-full p-2 hover:bg-background"
           data-testid={`button-favorite-${product.id}`}
         >
-          <Heart className="h-4 w-4 text-foreground hover:text-gaming-red" />
+          <Heart className="h-4 w-4 text-foreground hover:text-hellfire-red" />
         </Button>
       </div>
       
       <div className="p-6 space-y-3">
         <div className="flex justify-between items-start">
           <Link href={`/product/${product.id}`}>
-            <h3 className="font-semibold text-lg hover:text-gaming-neon cursor-pointer" data-testid={`text-product-name-${product.id}`}>
+            <h3 className="font-semibold text-lg hover:text-hellfire-red cursor-pointer" data-testid={`text-product-name-${product.id}`}>
               {product.name}
             </h3>
           </Link>

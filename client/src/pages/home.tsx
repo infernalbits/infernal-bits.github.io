@@ -27,35 +27,35 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="hero-gradient py-16 lg:py-24">
+      <section className="hero-gradient py-16 lg:py-24 digital-smoke relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="font-mono text-gaming-neon/40 text-xs mb-4 leading-none">
-              ████████╗██╗  ██╗███████╗    ██████╗  ███████╗███████╗████████╗
-              ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗ ██╔════╝██╔════╝╚══██╔══╝
-                 ██║   ███████║█████╗      ██████╔╝ █████╗  ███████╗   ██║   
-                 ██║   ██╔══██║██╔══╝      ██╔══██╗ ██╔══╝  ╚════██║   ██║   
-                 ██║   ██║  ██║███████╗    ██████╔╝ ███████╗███████║   ██║   
-                 ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚══════╝╚══════╝   ╚═╝   
+            <div className="font-mono text-hellfire-red/60 text-xs mb-4 leading-none infernal-text-glow">
+              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+              ▄▄▄██▀▀▀██   ▐█▀▀▀▀▀▀▀█▌     ▄▄▄██▀▀▀██   ▐█▀▀▀▀▀▀▀█▌  ██           ██       
+              ▀▀▀██    ██   ▐█▄▄▄▄▄▄▄█▌     ▀▀▀██    ██   ▐█▄▄▄▄▄▄▄█▌  ██           ██       
+                 ██    ██   ▐█▀▀▀▀▀▀▀█▌        ██    ██   ▐█▀▀▀▀▀▀▀█▌  ██           ██       
+              ▄▄▄██    ██   ▐█▄▄▄▄▄▄▄█▌     ▄▄▄██    ██   ▐█▄▄▄▄▄▄▄█▌  ███████████  ███████████
+              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Unleash Your <span className="text-gradient">Gaming Potential</span>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 infernal-text-glow">
+              Descend into <span className="text-gradient">Digital Hell</span>
             </h1>
             <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Discover the latest gaming hardware, in-depth reviews, and exclusive deals on top-tier components to build your ultimate gaming rig.
+              Welcome to the underworld of gaming hardware. Where only the most sinister builds survive and the weak are devoured by frame drops.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-medium hover-glow transition-all" data-testid="button-browse-products">
-                <Link href="/category/graphics-cards">Browse Products</Link>
+                <Link href="/category/graphics-cards">Enter the Arsenal</Link>
               </Button>
-              <Button variant="outline" className="border border-gaming-blue text-gaming-blue hover:bg-gaming-blue hover:text-accent-foreground px-8 py-3 rounded-lg font-medium transition-all" data-testid="button-latest-reviews">
-                <Link href="/news">Latest Reviews</Link>
+              <Button variant="outline" className="border border-infernal-orange text-infernal-orange hover:bg-infernal-orange hover:text-accent-foreground px-8 py-3 rounded-lg font-medium transition-all" data-testid="button-latest-reviews">
+                <Link href="/news">Read the Prophecies</Link>
               </Button>
             </div>
           </div>
           
           {/* Featured Products Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 relative">
             {productsLoading ? (
               Array.from({ length: 3 }).map((_, i) => (
                 <div key={i} className="product-card rounded-lg p-6">
@@ -76,23 +76,23 @@ export default function Home() {
 
       {/* ASCII Section Divider */}
       <div className="text-center py-8">
-        <div className="font-mono text-gaming-neon/30 text-xs leading-none">
-          ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+        <div className="font-mono text-infernal-orange/40 text-xs leading-none">
+          ░▒▓██████████ ⟄⟄⟄ SOULS BURNING ⟄⟄⟄ ██████████▓▒░
         </div>
       </div>
 
       {/* Product Categories */}
-      <section className="py-16 bg-card">
+      <section className="py-16 bg-card digital-smoke relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Shop by Category</h2>
-            <p className="text-muted-foreground text-lg">Find the perfect components for your gaming setup</p>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 infernal-text-glow">Choose Your Weapon</h2>
+            <p className="text-muted-foreground text-lg">Arm yourself from our cursed arsenal of digital destruction</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {categoriesLoading ? (
               Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="neon-border rounded-lg p-6 text-center">
+                <div key={i} className="hellfire-border rounded-lg p-6 text-center">
                   <Skeleton className="w-12 h-12 rounded-lg mx-auto mb-3" />
                   <Skeleton className="h-4 w-full" />
                 </div>
@@ -100,8 +100,8 @@ export default function Home() {
             ) : (
               categories?.map((category) => (
                 <Link key={category.id} href={`/category/${category.slug}`}>
-                  <div className="neon-border rounded-lg p-6 text-center hover-glow cursor-pointer" data-testid={`category-${category.slug}`}>
-                    <div className={`w-12 h-12 bg-gradient-to-br from-gaming-neon to-gaming-blue rounded-lg mx-auto mb-3 flex items-center justify-center`}>
+                  <div className="hellfire-border rounded-lg p-6 text-center hover-glow cursor-pointer" data-testid={`category-${category.slug}`}>
+                    <div className={`w-12 h-12 bg-gradient-to-br from-hellfire-red to-infernal-orange rounded-lg mx-auto mb-3 flex items-center justify-center hellfire-glow`}>
                       <i className={`fas fa-${category.icon} text-background text-xl`}></i>
                     </div>
                     <h3 className="font-medium text-sm">{category.name}</h3>
@@ -115,15 +115,12 @@ export default function Home() {
 
       {/* ASCII Gaming Divider */}
       <div className="text-center py-8">
-        <div className="font-mono text-gaming-blue/30 text-xs leading-none">
-          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-          ██████╗  ██╗    ███████╗██╗
-          ██╔══██╗ ██║    ██╔════╝██║
-          ██║  ██║ ██║    █████╗  ██║
-          ██║  ██║ ██║    ██╔══╝  ██║ 
-          ██████╔╝ ██████╗███████╗██████╗
-          ╚═════╝  ╚═════╝╚══════╝╚═════╝
-          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        <div className="font-mono text-demon-purple/40 text-xs leading-none">
+          ██▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓██
+          █▓▒░  ▄████▄   █████▄ ██████▄ ███ ██████▄   ████▄  ████▄ ███     ░▒▓█
+          █▓▒░  ██▄▄██   ██▄▄██ ██▄▄▄██ ███ ██▄▄▄██   ██▄██  ██▄██ ███     ░▒▓█
+          █▓▒░  ▀████▀   █████▀ ███████ ███ ███████   ████▀  ████▀ ███████ ░▒▓█
+          ██▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓██
         </div>
       </div>
 
@@ -132,11 +129,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h2 className="text-3xl font-bold mb-2">Hot Deals 🔥</h2>
-              <p className="text-muted-foreground">Limited time offers on top gaming gear</p>
+              <h2 className="text-3xl font-bold mb-2 infernal-text-glow">Soul-Burning Bargains</h2>
+              <p className="text-muted-foreground">Damned deals before they vanish into the void</p>
             </div>
-            <Button variant="ghost" className="text-gaming-neon hover:text-gaming-neon/80 font-medium" data-testid="button-view-all-deals">
-              View All Deals <i className="fas fa-arrow-right ml-2"></i>
+            <Button variant="ghost" className="text-hellfire-red hover:text-hellfire-red/80 font-medium" data-testid="button-view-all-deals">
+              Claim All Deals <i className="fas fa-arrow-right ml-2"></i>
             </Button>
           </div>
           
@@ -163,15 +160,10 @@ export default function Home() {
 
       {/* ASCII News Divider */}
       <div className="text-center py-8">
-        <div className="font-mono text-gaming-red/30 text-xs leading-none">
-          ═══════════════════════════════════════════════════════════════════════════════
-          ███╗   ██╗███████╗██╗    ██╗███████╗
-          ████╗  ██║██╔════╝██║    ██║██╔════╝
-          ██╔██╗ ██║█████╗  ██║ █╗ ██║███████╗
-          ██║╚██╗██║██╔══╝  ██║███╗██║╚════██║
-          ██║ ╚████║███████╗╚███╔███╔╝███████║
-          ╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝ ╚══════╝
-          ═══════════════════════════════════════════════════════════════════════════════
+        <div className="font-mono text-hellfire-red/40 text-xs leading-none">
+          ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+          ██▓▒░    ☠ DARK PROPHECIES FROM THE DIGITAL REALM ☠    ░▒▓██
+          ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
         </div>
       </div>
 
@@ -180,11 +172,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h2 className="text-3xl font-bold mb-2">Gaming News & Reviews</h2>
-              <p className="text-muted-foreground">Stay updated with the latest in gaming hardware</p>
+              <h2 className="text-3xl font-bold mb-2 infernal-text-glow">Unholy Chronicles</h2>
+              <p className="text-muted-foreground">Dark secrets and forbidden knowledge from the digital underworld</p>
             </div>
-            <Button variant="ghost" className="text-gaming-neon hover:text-gaming-neon/80 font-medium" data-testid="button-view-all-articles">
-              <Link href="/news">View All Articles <i className="fas fa-arrow-right ml-2"></i></Link>
+            <Button variant="ghost" className="text-hellfire-red hover:text-hellfire-red/80 font-medium" data-testid="button-view-all-articles">
+              <Link href="/news">Read All Prophecies <i className="fas fa-arrow-right ml-2"></i></Link>
             </Button>
           </div>
           
@@ -211,9 +203,9 @@ export default function Home() {
                   <div className="p-6">
                     <div className="flex items-center space-x-2 mb-3">
                       <Badge variant="secondary" className={`${
-                        article.category === 'REVIEW' ? 'bg-gaming-neon text-background' :
-                        article.category === 'GUIDE' ? 'bg-gaming-blue text-background' :
-                        'bg-gaming-red text-background'
+                        article.category === 'REVIEW' ? 'bg-hellfire-red text-background' :
+                        article.category === 'GUIDE' ? 'bg-infernal-orange text-background' :
+                        'bg-demon-purple text-background'
                       } text-xs font-bold`}>
                         {article.category}
                       </Badge>
@@ -223,10 +215,10 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{article.excerpt}</p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
-                        <div className="w-6 h-6 bg-gaming-neon rounded-full"></div>
+                        <div className="w-6 h-6 bg-hellfire-red rounded-full hellfire-glow"></div>
                         <span className="text-sm text-muted-foreground">{article.author}</span>
                       </div>
-                      <Button variant="ghost" className="text-gaming-neon hover:text-gaming-neon/80 text-sm font-medium p-0" data-testid={`button-read-article-${article.slug}`}>
+                      <Button variant="ghost" className="text-hellfire-red hover:text-hellfire-red/80 text-sm font-medium p-0" data-testid={`button-read-article-${article.slug}`}>
                         <Link href={`/news/${article.slug}`}>Read More</Link>
                       </Button>
                     </div>

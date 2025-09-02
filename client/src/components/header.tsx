@@ -32,15 +32,15 @@ export default function Header() {
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center space-x-3 cursor-pointer" data-testid="logo-infernalbits">
-                <div className="font-mono text-gaming-neon text-sm leading-none">
-                  <div>╔══════╗</div>
-                  <div>║ ▀██▀ ║</div>
-                  <div>╚══════╝</div>
+                <div className="font-mono text-hellfire-red text-sm leading-none">
+                  <div>  ░▄█▀▀▀█▄░  </div>
+                  <div> ▐██▄▄▄▄██▌ </div>
+                  <div>  ▀▀█▄▄▄█▀▀  </div>
                 </div>
                 <div>
-                  <span className="text-xl font-bold text-gradient">InfernalBits</span>
-                  <div className="font-mono text-xs text-gaming-neon/60">
-                    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                  <span className="text-xl font-bold text-gradient infernal-text-glow">InfernalBits</span>
+                  <div className="font-mono text-xs text-hellfire-red/60">
+                    ░░▒▒▓▓██ THE ABYSS AWAITS ██▓▓▒▒░░
                   </div>
                 </div>
               </div>
@@ -51,8 +51,8 @@ export default function Header() {
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <span 
-                    className={`text-sm font-medium transition-colors hover:text-gaming-neon ${
-                      isActive(item.href) ? "text-gaming-neon" : "text-foreground"
+                    className={`text-sm font-medium transition-colors hover:text-hellfire-red ${
+                      isActive(item.href) ? "text-hellfire-red" : "text-foreground"
                     }`}
                     data-testid={`nav-${item.name.toLowerCase()}`}
                   >
@@ -86,8 +86,8 @@ export default function Header() {
                     {navigation.map((item) => (
                       <Link key={item.name} href={item.href}>
                         <span 
-                          className={`text-lg font-medium transition-colors hover:text-gaming-neon ${
-                            isActive(item.href) ? "text-gaming-neon" : "text-foreground"
+                          className={`text-lg font-medium transition-colors hover:text-hellfire-red ${
+                            isActive(item.href) ? "text-hellfire-red" : "text-foreground"
                           }`}
                           onClick={() => setIsOpen(false)}
                           data-testid={`mobile-nav-${item.name.toLowerCase()}`}

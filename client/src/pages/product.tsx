@@ -56,9 +56,9 @@ export default function ProductPage() {
     <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-muted-foreground">
-        <Link href="/" className="hover:text-gaming-neon">Home</Link>
+        <Link href="/" className="hover:text-hellfire-red">Home</Link>
         <span className="mx-2">/</span>
-        <Link href={`/category/${product.category}`} className="hover:text-gaming-neon capitalize">
+        <Link href={`/category/${product.category}`} className="hover:text-hellfire-red capitalize">
           {product.category.replace('-', ' ')}
         </Link>
         <span className="mx-2">/</span>
@@ -75,7 +75,7 @@ export default function ProductPage() {
             data-testid={`img-product-${product.id}`}
           />
           {product.isOnSale && (
-            <Badge className="absolute top-4 left-4 bg-gaming-red text-background">
+            <Badge className="absolute top-4 left-4 bg-hellfire-red text-background">
               {discountPercentage}% OFF
             </Badge>
           )}
@@ -125,7 +125,7 @@ export default function ProductPage() {
           {/* Pricing */}
           <div className="space-y-2">
             <div className="flex items-center gap-4">
-              <span className="text-3xl font-bold text-gaming-neon" data-testid={`text-price-${product.id}`}>
+              <span className="text-3xl font-bold text-hellfire-red" data-testid={`text-price-${product.id}`}>
                 ${product.price}
               </span>
               {product.originalPrice && (
@@ -135,7 +135,7 @@ export default function ProductPage() {
               )}
             </div>
             {product.isOnSale && (
-              <p className="text-sm text-gaming-red font-medium">
+              <p className="text-sm text-hellfire-red font-medium">
                 Save ${(parseFloat(product.originalPrice || "0") - parseFloat(product.price)).toFixed(2)}
               </p>
             )}
@@ -144,7 +144,7 @@ export default function ProductPage() {
           {/* CTA Button */}
           <div className="space-y-4">
             <Button 
-              className="w-full bg-gaming-neon hover:bg-gaming-neon/90 text-background py-6 text-lg font-medium hover-glow"
+              className="w-full bg-hellfire-red hover:bg-hellfire-red/90 text-background py-6 text-lg font-medium hellfire-glow"
               asChild
               data-testid={`button-view-deal-${product.id}`}
             >
@@ -155,7 +155,7 @@ export default function ProductPage() {
             
             {/* Affiliate Disclosure */}
             <div className="flex items-start gap-2 p-3 bg-muted rounded-lg">
-              <Shield className="h-4 w-4 text-gaming-neon mt-0.5" />
+              <Shield className="h-4 w-4 text-hellfire-red mt-0.5" />
               <p className="text-xs text-muted-foreground">
                 This is an affiliate link. We may earn a commission if you make a purchase, 
                 at no additional cost to you. This helps support our reviews and content.
@@ -202,7 +202,7 @@ export default function ProductPage() {
                     />
                     <h3 className="font-semibold mb-2 line-clamp-2">{relatedProduct.name}</h3>
                     <div className="flex items-center justify-between">
-                      <span className="text-lg font-bold text-gaming-neon">${relatedProduct.price}</span>
+                      <span className="text-lg font-bold text-hellfire-red">${relatedProduct.price}</span>
                       <div className="flex items-center text-yellow-400">
                         <Star className="h-3 w-3 fill-current" />
                         <span className="text-xs ml-1">{relatedProduct.rating}</span>

@@ -49,12 +49,12 @@ export class MemStorage implements IStorage {
   private initializeData() {
     // Initialize categories
     const categoriesData: InsertCategory[] = [
-      { name: "Graphics Cards", slug: "graphics-cards", description: "High-performance GPUs for gaming", icon: "microchip", color: "gaming-neon" },
-      { name: "Processors", slug: "processors", description: "CPUs for ultimate gaming performance", icon: "memory", color: "gaming-blue" },
-      { name: "Storage", slug: "storage", description: "Fast SSDs and storage solutions", icon: "hdd", color: "gaming-red" },
-      { name: "Peripherals", slug: "peripherals", description: "Gaming keyboards, mice, and accessories", icon: "keyboard", color: "gaming-neon" },
-      { name: "Monitors", slug: "monitors", description: "High-refresh gaming displays", icon: "desktop", color: "gaming-blue" },
-      { name: "Cooling", slug: "cooling", description: "Keep your system running cool", icon: "fan", color: "gaming-red" },
+      { name: "Graphics Cards", slug: "graphics-cards", description: "Cursed GPUs forged in silicon hell", icon: "microchip", color: "hellfire-red" },
+      { name: "Processors", slug: "processors", description: "Demonic CPUs for unholy performance", icon: "memory", color: "infernal-orange" },
+      { name: "Storage", slug: "storage", description: "Corrupted drives to store your sins", icon: "hdd", color: "demon-purple" },
+      { name: "Peripherals", slug: "peripherals", description: "Possessed peripherals for dark rituals", icon: "keyboard", color: "hellfire-red" },
+      { name: "Monitors", slug: "monitors", description: "Portals to witness digital damnation", icon: "desktop", color: "infernal-orange" },
+      { name: "Cooling", slug: "cooling", description: "Ice from the ninth circle of computing", icon: "fan", color: "demon-purple" },
     ];
 
     categoriesData.forEach(cat => this.createCategory(cat));

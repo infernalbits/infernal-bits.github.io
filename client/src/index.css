@@ -3,67 +3,67 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(240, 10%, 4%);
-  --foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 8%);
-  --card-foreground: hsl(0, 0%, 95%);
-  --popover: hsl(240, 10%, 4%);
-  --popover-foreground: hsl(0, 0%, 98%);
-  --primary: hsl(142, 76%, 36%);
-  --primary-foreground: hsl(355, 7%, 7%);
-  --secondary: hsl(240, 4%, 16%);
-  --secondary-foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 5%, 15%);
-  --muted-foreground: hsl(240, 5%, 64%);
-  --accent: hsl(197, 71%, 50%);
-  --accent-foreground: hsl(0, 0%, 9%);
-  --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 6%, 20%);
-  --input: hsl(240, 6%, 20%);
-  --ring: hsl(142, 76%, 36%);
-  --chart-1: hsl(142, 76%, 36%);
-  --chart-2: hsl(159.7826, 100%, 36.0784%);
-  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
-  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
-  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
-  --sidebar: hsl(240, 10%, 8%);
-  --sidebar-foreground: hsl(0, 0%, 95%);
-  --sidebar-primary: hsl(142, 76%, 36%);
-  --sidebar-primary-foreground: hsl(355, 7%, 7%);
-  --sidebar-accent: hsl(197, 71%, 50%);
-  --sidebar-accent-foreground: hsl(0, 0%, 9%);
-  --sidebar-border: hsl(240, 6%, 20%);
-  --sidebar-ring: hsl(142, 76%, 36%);
+  --background: hsl(0, 0%, 1%);
+  --foreground: hsl(0, 50%, 85%);
+  --card: hsl(0, 5%, 3%);
+  --card-foreground: hsl(0, 30%, 90%);
+  --popover: hsl(0, 0%, 1%);
+  --popover-foreground: hsl(0, 50%, 85%);
+  --primary: hsl(0, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 10%, 8%);
+  --secondary-foreground: hsl(0, 30%, 90%);
+  --muted: hsl(0, 8%, 6%);
+  --muted-foreground: hsl(0, 20%, 50%);
+  --accent: hsl(30, 100%, 45%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 100%, 65%);
+  --destructive-foreground: hsl(0, 0%, 0%);
+  --border: hsl(0, 15%, 12%);
+  --input: hsl(0, 15%, 12%);
+  --ring: hsl(0, 100%, 50%);
+  --chart-1: hsl(0, 100%, 50%);
+  --chart-2: hsl(30, 100%, 45%);
+  --chart-3: hsl(60, 100%, 40%);
+  --chart-4: hsl(270, 80%, 40%);
+  --chart-5: hsl(300, 90%, 45%);
+  --sidebar: hsl(0, 5%, 3%);
+  --sidebar-foreground: hsl(0, 30%, 90%);
+  --sidebar-primary: hsl(0, 100%, 50%);
+  --sidebar-primary-foreground: hsl(0, 0%, 0%);
+  --sidebar-accent: hsl(30, 100%, 45%);
+  --sidebar-accent-foreground: hsl(0, 0%, 0%);
+  --sidebar-border: hsl(0, 15%, 12%);
+  --sidebar-ring: hsl(0, 100%, 50%);
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --radius: 0.75rem;
-  --gaming-neon: hsl(142, 100%, 60%);
-  --gaming-blue: hsl(197, 100%, 60%);
-  --gaming-red: hsl(0, 100%, 60%);
+  --font-serif: 'Crimson Text', Georgia, serif;
+  --font-mono: 'Source Code Pro', monospace;
+  --radius: 0.5rem;
+  --hellfire-red: hsl(0, 100%, 50%);
+  --infernal-orange: hsl(30, 100%, 45%);
+  --demon-purple: hsl(270, 80%, 40%);
 }
 
 .dark {
-  --background: hsl(240, 10%, 4%);
-  --foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 8%);
-  --card-foreground: hsl(0, 0%, 95%);
-  --popover: hsl(240, 10%, 4%);
-  --popover-foreground: hsl(0, 0%, 98%);
-  --primary: hsl(142, 76%, 36%);
-  --primary-foreground: hsl(355, 7%, 7%);
-  --secondary: hsl(240, 4%, 16%);
-  --secondary-foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 5%, 15%);
-  --muted-foreground: hsl(240, 5%, 64%);
-  --accent: hsl(197, 71%, 50%);
-  --accent-foreground: hsl(0, 0%, 9%);
-  --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 6%, 20%);
-  --input: hsl(240, 6%, 20%);
-  --ring: hsl(142, 76%, 36%);
+  --background: hsl(0, 0%, 1%);
+  --foreground: hsl(0, 50%, 85%);
+  --card: hsl(0, 5%, 3%);
+  --card-foreground: hsl(0, 30%, 90%);
+  --popover: hsl(0, 0%, 1%);
+  --popover-foreground: hsl(0, 50%, 85%);
+  --primary: hsl(0, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 10%, 8%);
+  --secondary-foreground: hsl(0, 30%, 90%);
+  --muted: hsl(0, 8%, 6%);
+  --muted-foreground: hsl(0, 20%, 50%);
+  --accent: hsl(30, 100%, 45%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 100%, 65%);
+  --destructive-foreground: hsl(0, 0%, 0%);
+  --border: hsl(0, 15%, 12%);
+  --input: hsl(0, 15%, 12%);
+  --ring: hsl(0, 100%, 50%);
 }
 
 @layer base {
@@ -77,78 +77,130 @@
 }
 
 @layer utilities {
-  .glow-effect {
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  .hellfire-glow {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5), 0 0 40px rgba(255, 140, 0, 0.2);
   }
   
-  .glow-blue {
-    box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+  .infernal-glow {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
   }
   
-  .glow-red {
-    box-shadow: 0 0 20px rgba(255, 68, 68, 0.3);
+  .demon-glow {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
   }
   
-  .neon-border {
-    border: 1px solid hsl(var(--gaming-neon));
-    box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.1);
+  .hellfire-border {
+    border: 1px solid hsl(var(--hellfire-red));
+    box-shadow: inset 0 0 15px rgba(255, 0, 0, 0.2), 0 0 10px rgba(255, 140, 0, 0.1);
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.6), 0 0 15px rgba(255, 140, 0, 0.3);
     transform: translateY(-2px);
     transition: all 0.3s ease;
   }
 
   .product-card {
-    background: linear-gradient(145deg, hsl(var(--card)), hsl(240, 10%, 10%));
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(0, 8%, 2%));
     border: 1px solid hsl(var(--border));
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(240, 10%, 8%) 50%, hsl(var(--background)) 100%);
+    background: radial-gradient(ellipse at center, hsl(0, 20%, 2%) 0%, hsl(0, 0%, 0%) 70%);
   }
 
   .text-gradient {
-    background: linear-gradient(45deg, hsl(var(--gaming-neon)), hsl(var(--gaming-blue)));
+    background: linear-gradient(45deg, hsl(var(--hellfire-red)), hsl(var(--infernal-orange)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  .gaming-neon {
-    color: hsl(var(--gaming-neon));
+  .hellfire-red {
+    color: hsl(var(--hellfire-red));
   }
 
-  .gaming-blue {
-    color: hsl(var(--gaming-blue));
+  .infernal-orange {
+    color: hsl(var(--infernal-orange));
   }
 
-  .gaming-red {
-    color: hsl(var(--gaming-red));
+  .demon-purple {
+    color: hsl(var(--demon-purple));
   }
 
-  .bg-gaming-neon {
-    background-color: hsl(var(--gaming-neon));
+  .bg-hellfire-red {
+    background-color: hsl(var(--hellfire-red));
   }
 
-  .bg-gaming-blue {
-    background-color: hsl(var(--gaming-blue));
+  .bg-infernal-orange {
+    background-color: hsl(var(--infernal-orange));
   }
 
-  .bg-gaming-red {
-    background-color: hsl(var(--gaming-red));
+  .bg-demon-purple {
+    background-color: hsl(var(--demon-purple));
   }
 
-  .border-gaming-neon {
-    border-color: hsl(var(--gaming-neon));
+  .border-hellfire-red {
+    border-color: hsl(var(--hellfire-red));
   }
 
-  .border-gaming-blue {
-    border-color: hsl(var(--gaming-blue));
+  .border-infernal-orange {
+    border-color: hsl(var(--infernal-orange));
   }
 
-  .border-gaming-red {
-    border-color: hsl(var(--gaming-red));
+  .border-demon-purple {
+    border-color: hsl(var(--demon-purple));
+  }
+
+  .infernal-text-glow {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 140, 0, 0.4);
+  }
+
+  .hellfire-bg {
+    background: radial-gradient(circle at center, hsl(0, 100%, 3%) 0%, hsl(0, 0%, 0%) 70%);
+  }
+
+  .apocalypse-gradient {
+    background: linear-gradient(180deg, hsl(0, 0%, 0%) 0%, hsl(0, 30%, 2%) 50%, hsl(0, 0%, 0%) 100%);
+  }
+
+  /* Additional atmospheric elements */
+  .digital-smoke::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, hsl(var(--hellfire-red) / 0.05) 50%, transparent 70%);
+    pointer-events: none;
+    animation: smokeFlow 8s ease-in-out infinite;
+  }
+
+  @keyframes smokeFlow {
+    0%, 100% { opacity: 0.3; transform: translateX(-10px); }
+    50% { opacity: 0.7; transform: translateX(10px); }
+  }
+
+  .void-border {
+    border: 1px solid hsl(var(--hellfire-red) / 0.3);
+    box-shadow: inset 0 0 10px hsl(var(--hellfire-red) / 0.1), 0 0 10px hsl(var(--hellfire-red) / 0.1);
+  }
+
+  /* Ominous page background */
+  .abyss-bg {
+    background: radial-gradient(ellipse 50% 80% at 50% 20%, hsl(0, 100%, 1%) 0%, hsl(0, 0%, 0%) 60%);
+    min-height: 100vh;
+  }
+
+  /* Flickering text effect */
+  .demonic-flicker {
+    animation: flicker 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; text-shadow: 0 0 5px hsl(var(--hellfire-red) / 0.8); }
+    50% { opacity: 0.8; text-shadow: 0 0 10px hsl(var(--hellfire-red) / 0.9), 0 0 15px hsl(var(--infernal-orange) / 0.5); }
   }
 }
