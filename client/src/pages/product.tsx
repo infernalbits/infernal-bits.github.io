@@ -173,7 +173,7 @@ export default function ProductPage() {
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-4">
-              {Object.entries(product.specifications as Record<string, string>).map(([key, value]) => (
+              {Object.entries((product.specifications as Record<string, string>) || {}).map(([key, value]) => (
                 <div key={key} className="flex justify-between py-2 border-b border-border">
                   <span className="font-medium capitalize">{key.replace(/([A-Z])/g, ' $1')}</span>
                   <span className="text-muted-foreground">{value}</span>
