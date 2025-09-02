@@ -30,6 +30,14 @@ export default function Home() {
       <section className="hero-gradient py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
+            <div className="font-mono text-gaming-neon/40 text-xs mb-4 leading-none">
+              ████████╗██╗  ██╗███████╗    ██████╗  ███████╗███████╗████████╗
+              ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗ ██╔════╝██╔════╝╚══██╔══╝
+                 ██║   ███████║█████╗      ██████╔╝ █████╗  ███████╗   ██║   
+                 ██║   ██╔══██║██╔══╝      ██╔══██╗ ██╔══╝  ╚════██║   ██║   
+                 ██║   ██║  ██║███████╗    ██████╔╝ ███████╗███████║   ██║   
+                 ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚══════╝╚══════╝   ╚═╝   
+            </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
               Unleash Your <span className="text-gradient">Gaming Potential</span>
             </h1>
@@ -66,6 +74,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ASCII Section Divider */}
+      <div className="text-center py-8">
+        <div className="font-mono text-gaming-neon/30 text-xs leading-none">
+          ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+        </div>
+      </div>
+
       {/* Product Categories */}
       <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
@@ -97,6 +112,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ASCII Gaming Divider */}
+      <div className="text-center py-8">
+        <div className="font-mono text-gaming-blue/30 text-xs leading-none">
+          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+          ██████╗  ██╗    ███████╗██╗
+          ██╔══██╗ ██║    ██╔════╝██║
+          ██║  ██║ ██║    █████╗  ██║
+          ██║  ██║ ██║    ██╔══╝  ██║ 
+          ██████╔╝ ██████╗███████╗██████╗
+          ╚═════╝  ╚═════╝╚══════╝╚═════╝
+          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        </div>
+      </div>
 
       {/* Hot Deals Section */}
       <section className="py-16">
@@ -131,6 +160,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ASCII News Divider */}
+      <div className="text-center py-8">
+        <div className="font-mono text-gaming-red/30 text-xs leading-none">
+          ═══════════════════════════════════════════════════════════════════════════════
+          ███╗   ██╗███████╗██╗    ██╗███████╗
+          ████╗  ██║██╔════╝██║    ██║██╔════╝
+          ██╔██╗ ██║█████╗  ██║ █╗ ██║███████╗
+          ██║╚██╗██║██╔══╝  ██║███╗██║╚════██║
+          ██║ ╚████║███████╗╚███╔███╔╝███████║
+          ╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝ ╚══════╝
+          ═══════════════════════════════════════════════════════════════════════════════
+        </div>
+      </div>
 
       {/* Gaming News & Reviews */}
       <section className="py-16 bg-card">

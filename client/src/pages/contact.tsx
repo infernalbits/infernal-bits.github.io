@@ -44,6 +44,16 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
+          <div className="font-mono text-gaming-blue/40 text-xs leading-none mb-6">
+            ╔═══════════════════════════════════════════════════════════════════╗
+            ║   ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗  ║
+            ║  ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝  ║
+            ║  ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║        ██║     ║
+            ║  ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║        ██║     ║
+            ║  ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║     ║
+            ║   ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝     ║
+            ╚═══════════════════════════════════════════════════════════════════╝
+          </div>
           <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
           <p className="text-lg text-muted-foreground">
             Have questions about our reviews or suggestions for products to test? We'd love to hear from you.

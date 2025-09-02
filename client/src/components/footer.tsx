@@ -32,9 +32,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-gaming-neon to-gaming-blue rounded-lg flex items-center justify-center">
-                <Flame className="text-background text-lg" />
+            <div className="mb-4">
+              <div className="font-mono text-gaming-neon/60 text-xs leading-none mb-2">
+                ╔════════════════════════════════════════╗
+                ║  ██╗███╗   ██╗███████╗███████╗██████╗  ║
+                ║  ██║████╗  ██║██╔════╝██╔════╝██╔══██╗ ║
+                ║  ██║██╔██╗ ██║█████╗  █████╗  ██████╔╝ ║
+                ║  ██║██║╚██╗██║██╔══╝  ██╔══╝  ██╔══██╗ ║
+                ║  ██║██║ ╚████║██║     ███████╗██║  ██║ ║
+                ║  ╚═╝╚═╝  ╚═══╝╚═╝     ╚══════╝╚═╝  ╚═╝ ║
+                ╚════════════════════════════════════════╝
               </div>
               <span className="text-xl font-bold text-gradient">InfernalBits</span>
             </div>

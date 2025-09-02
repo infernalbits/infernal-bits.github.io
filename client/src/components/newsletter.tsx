@@ -43,6 +43,18 @@ export default function Newsletter() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-6">
+          <div className="font-mono text-gaming-neon/40 text-xs leading-none">
+            ╔══════════════════════════════════════════════════════════════════════════╗
+            ║  ██████╗ ██╗   ██╗██████╗ ███████╗ ██████╗██████╗ ██╗██████╗ ███████╗  ║
+            ║  ██╔══██╗██║   ██║██╔══██╗██╔════╝██╔════╝██╔══██╗██║██╔══██╗██╔════╝  ║
+            ║  ██████╔╝██║   ██║██████╔╝███████╗██║     ██████╔╝██║██████╔╝█████╗    ║
+            ║  ██╔══██╗██║   ██║██╔══██╗╚════██║██║     ██╔══██╗██║██╔══██╗██╔══╝    ║
+            ║  ██║  ██║╚██████╔╝██████╔╝███████║╚██████╗██║  ██║██║██████╔╝███████╗  ║
+            ║  ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═════╝ ╚══════╝  ║
+            ╚══════════════════════════════════════════════════════════════════════════╝
+          </div>
+        </div>
         <div className="neon-border rounded-lg p-8 lg:p-12 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Level Up Your Gaming Knowledge</h2>

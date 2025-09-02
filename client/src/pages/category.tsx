@@ -124,7 +124,7 @@ export default function CategoryPage() {
             <ProductCard 
               key={product.id} 
               product={product} 
-              showDiscount={product.isOnSale}
+              showDiscount={product.isOnSale || false}
             />
           ))
         )}

@@ -31,11 +31,18 @@ export default function Header() {
           <div className="flex items-center space-x-8">
             {/* Logo */}
             <Link href="/">
-              <div className="flex items-center space-x-2 cursor-pointer" data-testid="logo-infernalbits">
-                <div className="w-8 h-8 bg-gradient-to-br from-gaming-neon to-gaming-blue rounded-lg flex items-center justify-center">
-                  <Flame className="text-background text-lg" />
+              <div className="flex items-center space-x-3 cursor-pointer" data-testid="logo-infernalbits">
+                <div className="font-mono text-gaming-neon text-sm leading-none">
+                  <div>╔══════╗</div>
+                  <div>║ ▀██▀ ║</div>
+                  <div>╚══════╝</div>
                 </div>
-                <span className="text-xl font-bold text-gradient">InfernalBits</span>
+                <div>
+                  <span className="text-xl font-bold text-gradient">InfernalBits</span>
+                  <div className="font-mono text-xs text-gaming-neon/60">
+                    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                  </div>
+                </div>
               </div>
             </Link>
             
