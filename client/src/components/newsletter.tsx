@@ -18,8 +18,8 @@ export default function Newsletter() {
     },
     onSuccess: () => {
       toast({
-        title: "Successfully subscribed!",
-        description: "Thanks for joining our community. Check your email for confirmation.",
+        title: "Soul bound to darkness!",
+        description: "Your essence has been captured. Await the dark revelations in your inbox.",
       });
       setEmail("");
       queryClient.invalidateQueries({ queryKey: ["/api/newsletter"] });
@@ -44,7 +44,7 @@ export default function Newsletter() {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
-          <div className="font-mono text-gaming-neon/40 text-xs leading-none">
+          <div className="font-mono text-hellfire-red/60 text-xs leading-none">
             ╔══════════════════════════════════════════════════════════════════════════╗
             ║  ██████╗ ██╗   ██╗██████╗ ███████╗ ██████╗██████╗ ██╗██████╗ ███████╗  ║
             ║  ██╔══██╗██║   ██║██╔══██╗██╔════╝██╔════╝██╔══██╗██║██╔══██╗██╔════╝  ║
@@ -55,11 +55,11 @@ export default function Newsletter() {
             ╚══════════════════════════════════════════════════════════════════════════╝
           </div>
         </div>
-        <div className="neon-border rounded-lg p-8 lg:p-12 text-center">
+        <div className="hellfire-border rounded-lg p-8 lg:p-12 text-center hellfire-bg">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Level Up Your Gaming Knowledge</h2>
+            <h2 className="text-3xl font-bold mb-4 infernal-text-glow">Join the Digital Coven</h2>
             <p className="text-muted-foreground mb-8">
-              Get exclusive deals, early access to reviews, and insider tips delivered to your inbox weekly.
+              Receive cursed deals, forbidden hardware secrets, and prophecies of doom delivered to your mortal inbox.
             </p>
             
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -74,22 +74,22 @@ export default function Newsletter() {
               />
               <Button 
                 type="submit" 
-                className="bg-gaming-neon hover:bg-gaming-neon/90 text-background px-6 py-3 rounded-lg font-medium whitespace-nowrap"
+                className="bg-hellfire-red hover:bg-hellfire-red/90 text-primary-foreground px-6 py-3 rounded-lg font-medium whitespace-nowrap hellfire-glow"
                 disabled={subscribeMutation.isPending}
                 data-testid="button-subscribe-newsletter"
               >
-                {subscribeMutation.isPending ? "Subscribing..." : "Subscribe"}
+                {subscribeMutation.isPending ? "Binding Soul..." : "Bind Soul"}
               </Button>
             </form>
             
             <div className="flex items-center justify-center mt-6 space-x-6 text-sm text-muted-foreground">
               <div className="flex items-center">
-                <Shield className="mr-2 h-4 w-4 text-gaming-neon" />
-                No spam, ever
+                <Shield className="mr-2 h-4 w-4 text-hellfire-red" />
+                No holy spam, only darkness
               </div>
               <div className="flex items-center">
-                <X className="mr-2 h-4 w-4 text-gaming-neon" />
-                Unsubscribe anytime
+                <X className="mr-2 h-4 w-4 text-hellfire-red" />
+                Escape our grasp anytime
               </div>
             </div>
           </div>
